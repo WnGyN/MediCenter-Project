@@ -25,6 +25,7 @@ header{
     display: flex;
     justify-content: space-between;
     width:990px;
+    overflow-x:hidden;
 }
 
 .logo{
@@ -449,20 +450,6 @@ footer .copyright{
 /* Fim do rodapé */
 
 /* Responsividade do site */
-@media screen and (max-width: 930px){
-    .container{
-        padding: 0px 20px;
-    }
-
-    .headline h1{
-        font-size: 60px;
-    }
-
-    .headline h2{
-        font-size:20px;
-    }
-}
-
 @media screen and (max-width: 929px){
     .menu nav ul{
         flex-direction: column;
@@ -478,6 +465,7 @@ footer .copyright{
     
     .container{
         flex-direction: column;
+        padding: 0px 20px;
     }
 
     header .container{
@@ -501,6 +489,14 @@ footer .copyright{
         height: auto;
     }
 
+    .headline h1{
+        font-size: 60px;
+    }
+
+    .headline h2{
+        font-size:20px;
+    }
+
     .banner_options{
         margin-top: 20px;
     }
@@ -511,7 +507,7 @@ footer .copyright{
         height:auto;
         flex-direction: column;
     }
-    
+
     .banner_title, .banner_description, .day{
         padding:10px 0px;
     }
@@ -521,12 +517,19 @@ footer .copyright{
     }
 
     .headline h1{
-        font-size: 50px;
+        font-size: 70px;
         margin-bottom: 5px;
     }
 
     .headline h2{
-        font-size:17px;
+        font-size:20px;
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 700px){
+    article{
+        min-width:100%;
+    }
+}
+/* Fim da responsividade*/
